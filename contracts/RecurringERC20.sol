@@ -5,7 +5,7 @@ import "./UseableToken.sol";
 
 contract RecurringERC20 {
   address public owner;
-  address paymentTo;
+  address public paymentTo;
   uint public lastBlockNumberPaid;
   uint public amountOfBlocksPerPayment;
   uint public paymentPerInterval;

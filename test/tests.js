@@ -11,7 +11,7 @@ contract('Contracts', (accounts) => {
     assert.equal(balance.toNumber(), 10000, "10000 was in the first account");
   });
 
-  it('receiver should be able to withdraw money from recurring Ether contract after a certain number of blocks ', async () => {
+  it('receiver should be able to withdraw Ether from recurring Ether contract after a certain number of blocks ', async () => {
     const recurringEtherInstance = await RecurringEther.deployed();
     const blockIncreaserInstance = await BlockIncreaser.deployed();
 
